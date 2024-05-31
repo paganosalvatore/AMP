@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="titolo">La Vita Marina</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <style>
+        #map {
+            height: 500px;
+            margin: 20px auto;
+            width: 90%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>La Vita Marina</h1>
+    </header>
+    <section id="content">
+        <div class="card-container">
+            <div class="card">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <img src="coral-reef.jpg" alt="Barriera corallina">
+                    </div>
+                    <div class="card-back">
+                        <p>La vita marina comprende tutte le forme di vita che abitano gli oceani e i mari. Questi organismi giocano un ruolo cruciale nell'ecosistema globale, influenzando il clima e fornendo risorse vitali per l'uomo.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <img src="vita_oceanica.jpg" alt="Vita oceanica">
+                    </div>
+                    <div class="card-back">
+                        <p>Gli oceani coprono oltre il 70% della superficie terrestre e ospitano una vasta gamma di biodiversità. Forniscono ossigeno, regolano il clima e sono una fonte di cibo e risorse.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <img src="amp.jpg" alt="Conservazione marina">
+                    </div>
+                    <div class="card-back">
+                        <p>La conservazione marina è essenziale per proteggere le specie e gli habitat marini minacciati da inquinamento, pesca eccessiva e cambiamenti climatici. Le aree marine protette sono un esempio di come possiamo aiutare a preservare questi ecosistemi fragili.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <br><br><br><br><br><br><br><br>
+    <section id="amp-italia">
+        <h2>Aree Marine Protette in Italia</h2>
+        <style>
+            p { font-style: oblique; border-style:solid; border-color:rgb(206, 240, 130);}
+        </style>
+        <p>Alcune delle aree marine protette in Italia <br>
+        Le aree marine protette (AMP) sono zone di mare, costa e ambienti marini e costieri che vengono tutelate per preservare l'ambiente naturale, la biodiversità e le risorse marine. In Italia, ci sono numerose AMP che contribuiscono alla conservazione del patrimonio naturale marino.</p>
+        <div class="amp-container">
+            <div class="amp-card">
+                <img src="amp_capo_rizzuto.jpg" alt="Area Marina Protetta 1">
+                <p>A.M.P. Capo Rizzuto</p>
+            </div>
+            <div class="amp-card">
+                <img src="portofino.png" alt="Area Marina Protetta 2">
+                <p>A.M.P. Portofino</p>
+            </div>
+            <div class="amp-card">
+                <img src="5terre.jpg" alt="Area Marina Protetta 3">
+                <p>A.M.P. 5 Terre</p>
+            </div>
+        </div>
+    </section>
+    <div class="fish-container">
+        <img src="fish.png" alt="Pesciolino" class="fish">
+    </div>
+    <section id="species-to-protect">
+        <h2>Specie di Pesci da Proteggere</h2>
+        <div class="species-container">
+            <div class="species-card">
+                <img src="tuna.jpg" alt="Tonno Rosso">
+                <p><strong>Tonno Rosso</strong></p>
+                <p>Località: Oceano Atlantico e Mediterraneo</p>
+                <p>Caratteristiche: Grande pesce pelagico, noto per la sua velocità e resistenza.</p>
+            </div>
+            <div class="species-card">
+                <img src="seahorse.jpeg" alt="Cavalluccio Marino">
+                <p><strong>Cavalluccio Marino</strong></p>
+                <p>Località: Barriere coralline tropicali</p>
+                <p>Caratteristiche: Piccolo pesce con una forma unica e capacità di mimetizzarsi.</p>
+            </div>
+            <div class="species-card">
+                <img src="angelshark.jpg" alt="Squatina">
+                <p><strong>Squatina</strong></p>
+                <p>Località: Fondali sabbiosi del Mediterraneo</p>
+                <p>Caratteristiche: Squalo piatto con abitudini bentoniche, molto raro e minacciato.</p>
+            </div>
+        </div>
+    </section>
+    <div id="map"></div>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script src="https://unpkg.com/leaflet-perspective@0.1.1/dist/leaflet-perspective.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
